@@ -7,11 +7,13 @@ const page = async({params}) => {
     const food = data.data;
     const {id, dish_name, image_link, category} = food;
     return (
-        <div>
-            <h1>Dish Id: {id}</h1>
-            <h2>The food is: {dish_name}</h2>
-            <p>Category: {category}</p>
-            <Image src={image_link} alt={dish_name} width={200} height={100} />
+        <div className="flex justify-center items-center">
+            <div className="border border-gray-200 shadow-2xl rounded-2xl p-5 space-y-5 text-center max-w-100">
+            <h1 className="text-4xl font-bold">Dish Id: {id}</h1>
+            <h2 className="text-xl font-semibold">The food is: {dish_name}</h2>
+            <p className="text-lg mb-5">Category: {category}</p>
+            <Image className="mx-auto" src={image_link} alt={dish_name} width={200} height={100} />
+        </div>
         </div>
     );
 };
