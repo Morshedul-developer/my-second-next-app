@@ -9,7 +9,7 @@ const page = async({params}) => {
     return (
         <div className="flex justify-center items-center">
             <div className="border border-gray-200 shadow-2xl rounded-2xl px-5 py-10 space-y-5 text-center max-w-100">
-            <h1 className="text-4xl font-bold">Dish Id: {id}</h1>
+            <h1 className="text-4xl font-bold">The Food Id: {id}</h1>
             <h2 className="text-xl font-semibold">The food is: {dish_name}</h2>
             <hr />
             <p className="text-lg mb-5">Category: {category}</p>
